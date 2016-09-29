@@ -1,0 +1,283 @@
+1> contemplate laser
+p
+  "You could "
+  a cmd="AMBULATE TO THE LASER"
+    "AMBULATE TO THE LASER"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LASER"
+    "COMMUNICATE ABOUT THE LASER"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+2> ambulate
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  "."
+p
+  "On the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " are a "
+  a cmd="CONTEMPLATE SOLDERING TOOL"
+    "SOLDERING TOOL"
+  " and a "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  "."
+dir = "NORTH"
+hunger = 1
+loc = "LIVING ROOM"
+3> contemplate laser
+p
+  "The "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  " is on the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE LASER"
+    "COMMUNICATE ABOUT THE LASER"
+  "."
+dir = "NORTH"
+hunger = 1
+loc = "LIVING ROOM"
+4> operate workbench
+p
+  "You "
+  a cmd="OPERATE THE SOLDERING TOOL"
+    "OPERATE THE SOLDERING TOOL"
+  " and mount the "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  " on your head!"
+dir = "NORTH"
+hunger = 1
+laser = true
+loc = "LIVING ROOM"
+5> contemplate laser
+p
+  "The "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  " is mounted on your head."
+p
+  "You could "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LASER"
+    "COMMUNICATE ABOUT THE LASER"
+  "."
+dir = "NORTH"
+hunger = 1
+laser = true
+loc = "LIVING ROOM"
+6> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam burns a hole in the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "!"
+p
+  "You receive a text message from "
+  a cmd="SWEETIE"
+    "SWEETIE"
+  "!"
+p
+  "“I’ll be home soon!”"
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "NORTH"
+hit_WORKBENCH = 1
+hunger = 2
+laser = true
+loc = "LIVING ROOM"
+scom = true
+used_laser = true
+7> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The WORKBENCH catches fire!"
+--MORE--
+p
+  "After a moment, the flames die down."
+dir = "NORTH"
+hit_WORKBENCH = 2
+hunger = 3
+laser = true
+loc = "LIVING ROOM"
+scom = true
+used_laser = true
+8> go to window
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is closed. Through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " you see a "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+p
+  "There could be something delicious in the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+dir = "NORTH"
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true
+9> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam shatters the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hit_WINDOW = 1
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true
+10> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam passes harmlessly through the broken "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+dir = "NORTH"
+hit_WINDOW = 2
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true
+11> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam passes harmlessly through the broken "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+dir = "NORTH"
+hit_WINDOW = 3
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true
+12> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam passes harmlessly through the broken "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+dir = "NORTH"
+hit_WINDOW = 4
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true
+13> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam passes harmlessly through the broken "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+dir = "NORTH"
+hit_WINDOW = 5
+hit_WORKBENCH = 2
+hunger = 4
+laser = true
+loc = "KITCHEN"
+scom = true
+used_laser = true

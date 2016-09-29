@@ -1,0 +1,254 @@
+1> enumerate
+p
+  "Valid commands include: "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  ", "
+  a cmd="ROTATE"
+    "ROTATE"
+  ", "
+  a cmd="CONTEMPLATE"
+    "CONTEMPLATE"
+  ", "
+  a cmd="OPERATE"
+    "OPERATE"
+  ", "
+  a cmd="COMMUNICATE"
+    "COMMUNICATE"
+  "."
+p
+  "You could "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  " valid commands again!"
+dir = "NORTH"
+loc = "FUTON"
+2> rotate
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " and "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "."
+dir = "EAST"
+hunger = 1
+loc = "LIVING ROOM"
+3> rotate left
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  "."
+p
+  "On the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " are a "
+  a cmd="CONTEMPLATE SOLDERING TOOL"
+    "SOLDERING TOOL"
+  " and a "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  "."
+p
+  "You receive a text message from "
+  a cmd="SWEETIE"
+    "SWEETIE"
+  "!"
+p
+  "“I’ll be home soon!”"
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "NORTH"
+hunger = 2
+loc = "LIVING ROOM"
+scom = true
+4> operate workbench
+p
+  "You "
+  a cmd="OPERATE THE SOLDERING TOOL"
+    "OPERATE THE SOLDERING TOOL"
+  " and mount the "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  " on your head!"
+dir = "NORTH"
+hunger = 2
+laser = true
+loc = "LIVING ROOM"
+scom = true
+5> w
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+dir = "WEST"
+hunger = 3
+laser = true
+loc = "LIVING ROOM"
+scom = true
+6> operate front door
+p
+  "You "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  ". The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is now open. Through the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " you can see the "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  "."
+dir = "WEST"
+hunger = 3
+is_FRONT_DOOR_open = true
+laser = true
+loc = "LIVING ROOM"
+scom = true
+7> enumerate
+p
+  "Valid commands include: "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  ", "
+  a cmd="ROTATE"
+    "ROTATE"
+  ", "
+  a cmd="CONTEMPLATE"
+    "CONTEMPLATE"
+  ", "
+  a cmd="OPERATE"
+    "OPERATE"
+  ", "
+  a cmd="COMMUNICATE"
+    "COMMUNICATE"
+  "."
+p
+  "You could "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  " valid commands again!"
+dir = "WEST"
+hunger = 3
+is_FRONT_DOOR_open = true
+laser = true
+loc = "LIVING ROOM"
+scom = true
+8> contemplate tree
+p
+  "You could "
+  a cmd="AMBULATE TO THE TREE"
+    "AMBULATE TO THE TREE"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+dir = "WEST"
+hunger = 3
+is_FRONT_DOOR_open = true
+laser = true
+loc = "LIVING ROOM"
+scom = true
+9> COMMUNICATE ABOUT THE TREE
+p
+  "“They are crab apples. The humans do not like to eat them.”"
+dir = "WEST"
+hunger = 3
+is_FRONT_DOOR_open = true
+laser = true
+loc = "LIVING ROOM"
+scom = true
+10> operate tree
+p
+  "You cannot "
+  a cmd="OPERATE"
+    "OPERATE"
+  " the "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "!"
+dir = "WEST"
+hunger = 3
+is_FRONT_DOOR_open = true
+laser = true
+loc = "LIVING ROOM"
+scom = true

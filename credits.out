@@ -1,0 +1,154 @@
+1> credits
+p
+  div
+    "HOME SWEETIE-BOT HOME"
+  div
+    "version 2 released 2012-06-24"
+  div
+    "created by "
+    a href="http://ifwiki.org/index.php/Jacques_Frechet"
+      "JACQUES FRECHET"
+  div
+    "for the "
+    a href="http://ifwiki.org/index.php/Cover_Stories"
+      "COVER STORIES"
+    " event organized by "
+    a href="http://ifwiki.org/index.php/Sam_Kabo_Ashwell"
+      "SAM KABO ASHWELL"
+  div
+    "cover image by "
+    a href="http://ifwiki.org/index.php/Duncan_Bowsman"
+      "DUNCAN BOWSMAN"
+  div
+    "font by "
+    a href="http://zone38.net/font/#pressstart"
+      "CODY “CODEMAN38” BOISCLAIR"
+  div
+    "beta-tested by "
+    a href="http://ifwiki.org/index.php/Jonathan_Blask"
+      "JONATHAN BLASK"
+    ", "
+    a href="http://ifwiki.org/index.php/Dan_Fabulich"
+      "DAN FABULICH"
+    ", "
+    a href="http://ifwiki.org/index.php/Joey_Jones"
+      "JOEY JONES"
+    ", and "
+    a href="http://ifwiki.org/index.php/Andrew_Schultz"
+      "ANDREW SCHULTZ"
+  div
+    "built with "
+    a href="http://maxtaco.github.com/coffee-script/"
+      "ICED COFFEESCRIPT"
+    ", "
+    a href="http://jquery.com/"
+      "JQUERY"
+    ", "
+    a href="http://jade-lang.com/"
+      "JADE"
+    ", "
+    a href="http://learnboost.github.com/stylus/"
+      "STYLUS"
+    ", "
+    a href="http://visionmedia.github.com/nib/"
+      "NIB"
+    ", "
+    a href="http://github.com/mishoo/UglifyJS"
+      "UGLIFYJS"
+    ", and "
+    a href="http://nodejs.org/"
+      "NODE.JS"
+  div
+    "for JESSICA, the bestest sweetie ever"
+dir = "NORTH"
+loc = "FUTON"
+2> about
+p
+  "You don’t really need to read these notes before playing, and they are sort of dry, but there are no spoilers here either."
+p
+  "You can see the whole game just by clicking blue links; no keyboard required. (You may need to scroll back occasionally.)"
+p
+  "On some touch screens, tapping to the right of the > will show the soft keyboard."
+p
+  "As of this writing, only Chrome supports speech recognition: click the gray microphone icon and speak a command."
+p
+  "Keyboard users may abbreviate enumerable commands to their first letter, except for CONTEMPLATE (X, L, or type a noun by itself) and ENUMERATE (Enter with no command). C means COMMUNICATE. E means EAST. (Weird, no?)"
+p
+  "The browser’s Back/Forward functions will undo/redo, and a bookmark will save a game in progress (including the full transcript), but the blue [undo] links along the right margin are usually all you need."
+p
+  "If you are playing while connected to the Internet, saved games can be restored on any Internet-connected browser or device by copying the URL."
+p
+  "You can play offline by loading the game while online and leaving the tab open as you travel, or by saving the page to disk; it’s one self-contained .html file. The game should save and restore properly even without network access, but only within the same browser."
+p
+  "Email me at "
+  a href="mailto:zaphod@toastball.net"
+    "zaphod@toastball.net"
+  ". To include a game transcript, just email me the link. You can add notes to the transcript by entering a command that starts with * or #."
+p
+  "Huge thanks to everyone who made this game possible! See the CREDITS for a partial list."
+dir = "NORTH"
+loc = "FUTON"
+3> version
+p
+  div
+    "HOME SWEETIE-BOT HOME"
+  div
+    "version 2 released 2012-06-24"
+  div
+    "created by "
+    a href="http://ifwiki.org/index.php/Jacques_Frechet"
+      "JACQUES FRECHET"
+  div
+    "for the "
+    a href="http://ifwiki.org/index.php/Cover_Stories"
+      "COVER STORIES"
+    " event organized by "
+    a href="http://ifwiki.org/index.php/Sam_Kabo_Ashwell"
+      "SAM KABO ASHWELL"
+  div
+    "cover image by "
+    a href="http://ifwiki.org/index.php/Duncan_Bowsman"
+      "DUNCAN BOWSMAN"
+  div
+    "font by "
+    a href="http://zone38.net/font/#pressstart"
+      "CODY “CODEMAN38” BOISCLAIR"
+  div
+    "beta-tested by "
+    a href="http://ifwiki.org/index.php/Jonathan_Blask"
+      "JONATHAN BLASK"
+    ", "
+    a href="http://ifwiki.org/index.php/Dan_Fabulich"
+      "DAN FABULICH"
+    ", "
+    a href="http://ifwiki.org/index.php/Joey_Jones"
+      "JOEY JONES"
+    ", and "
+    a href="http://ifwiki.org/index.php/Andrew_Schultz"
+      "ANDREW SCHULTZ"
+  div
+    "built with "
+    a href="http://maxtaco.github.com/coffee-script/"
+      "ICED COFFEESCRIPT"
+    ", "
+    a href="http://jquery.com/"
+      "JQUERY"
+    ", "
+    a href="http://jade-lang.com/"
+      "JADE"
+    ", "
+    a href="http://learnboost.github.com/stylus/"
+      "STYLUS"
+    ", "
+    a href="http://visionmedia.github.com/nib/"
+      "NIB"
+    ", "
+    a href="http://github.com/mishoo/UglifyJS"
+      "UGLIFYJS"
+    ", and "
+    a href="http://nodejs.org/"
+      "NODE.JS"
+  div
+    "for JESSICA, the bestest sweetie ever"
+dir = "NORTH"
+loc = "FUTON"

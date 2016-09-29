@@ -1,0 +1,115 @@
+1> living room
+p
+  "You are sitting on the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " facing the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You could "
+  a cmd="AMBULATE TO THE LIVING ROOM"
+    "AMBULATE TO THE LIVING ROOM"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LIVING ROOM"
+    "COMMUNICATE ABOUT THE LIVING ROOM"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+2> kitchen
+p
+  "You could "
+  a cmd="AMBULATE TO THE KITCHEN"
+    "AMBULATE TO THE KITCHEN"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE KITCHEN"
+    "COMMUNICATE ABOUT THE KITCHEN"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+3> workbench
+p
+  "You could "
+  a cmd="AMBULATE TO THE WORKBENCH"
+    "AMBULATE TO THE WORKBENCH"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE WORKBENCH"
+    "COMMUNICATE ABOUT THE WORKBENCH"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+4> soldering tool
+p
+  "You could "
+  a cmd="AMBULATE TO THE SOLDERING TOOL"
+    "AMBULATE TO THE SOLDERING TOOL"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE SOLDERING TOOL"
+    "COMMUNICATE ABOUT THE SOLDERING TOOL"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+5> queen
+p
+  "“QUEEN” is not a valid command! You could "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  " valid commands."
+dir = "NORTH"
+loc = "FUTON"
+6> contemplate queen
+p
+  "What QUEEN?"
+dir = "NORTH"
+loc = "FUTON"
+7> contemplate the queen
+p
+  "What QUEEN?"
+dir = "NORTH"
+loc = "FUTON"
+8> bugs
+p
+  "“BUGS” is not a valid command! You could "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  " valid commands."
+dir = "NORTH"
+loc = "FUTON"
+9> contemplate bugs
+p
+  "What BUGS?"
+dir = "NORTH"
+loc = "FUTON"
+10> contemplate the bugs
+p
+  "What BUGS?"
+dir = "NORTH"
+loc = "FUTON"
+11> fridge
+p
+  "The last time you saw it, the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " was closed."
+p
+  "You could "
+  a cmd="AMBULATE TO THE REFRIGERATOR"
+    "AMBULATE TO THE REFRIGERATOR"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE REFRIGERATOR"
+    "COMMUNICATE ABOUT THE REFRIGERATOR"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+12> tree
+p
+  "You could "
+  a cmd="AMBULATE TO THE TREE"
+    "AMBULATE TO THE TREE"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+dir = "NORTH"
+loc = "FUTON"

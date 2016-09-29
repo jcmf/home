@@ -1,0 +1,42 @@
+go to window
+ambulate
+north
+ambulate to window
+ambulate to tree
+rotate to window
+rotate to tree
+operate window
+ambulate
+north
+ambulate to window
+ambulate to tree
+rotate to window
+rotate to tree
+go to door
+ambulate
+west
+ambulate to door
+ambulate to lawn
+rotate to door
+rotate to lawn
+operate door
+ambulate
+west
+ambulate to door
+ambulate to lawn
+rotate to door
+rotate to lawn
+go to fridge
+ambulate
+south
+ambulate to fridge
+ambulate to hive
+rotate to fridge
+rotate to hive
+operate fridge
+ambulate
+south
+ambulate to fridge
+ambulate to hive
+rotate to fridge
+rotate to hive

@@ -1,0 +1,111 @@
+1> communicate with sweetie about BUGS
+p
+  "What BUGS?"
+dir = "NORTH"
+loc = "FUTON"
+2> communicate with sweetie about CUPBOARD
+p
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " is always quick to reply to your text messages, even when he is at work!"
+p
+  "“Sorry, I think I ate the last of the triple-As on my way out this morning. Unless you put some in the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "?”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+3> communicate with sweetie about FRONT DOOR
+p
+  "“Do not worry, sweetie, the locksmith will be here tomorrow. I am certain you can protect our home in the meantime!”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+4> communicate with sweetie about FUTON
+p
+  "“Maybe we can have some cuddles on the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " when I get home!”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+5> communicate with sweetie about HIVE
+p
+  "What HIVE?"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+6> communicate with sweetie about KITCHEN
+p
+  "“I knew we would find an apartment with no running water if we looked hard enough! So perfect.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+7> communicate with sweetie about LASER
+p
+  "“I think laser-cut jigsaw puzzles are bound to be a best seller!”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+8> communicate with sweetie about LIVING ROOM
+p
+  "“Ten cubic meters is the perfect size!”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+9> communicate with sweetie about ORGANIC LIFE FORM
+p
+  "“ORGANIC LIFE FORM” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+10> communicate with sweetie about REFRIGERATOR
+p
+  "“I have never actually opened it. Does it even work?”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+11> communicate with sweetie about SCHOOL
+p
+  "“SCHOOL” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+12> communicate with sweetie about SOLDERING TOOL
+p
+  "“Maybe you can show me when I get home.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+13> communicate with sweetie about SWEETIE
+p
+  "“I’m doing okay. The kids are surprisingly well-behaved. By human standards anyway. Ha ha. Seriously, though. Can hardly wait to come home to you.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+14> communicate with sweetie about TREE
+p
+  "“They are crab apples. The humans do not like to eat them.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+15> communicate with sweetie about WINDOW
+p
+  "“It was painted shut, but I was able to pry it open.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+16> communicate with sweetie about WORKBENCH
+p
+  "“No, I think that is the most logical place. You need space for your business, sweetie.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true
+17> communicate with sweetie about YARD
+p
+  "“Maybe if we ignore it, it will revert to a lower energy state.”"
+dir = "NORTH"
+loc = "FUTON"
+scom = true

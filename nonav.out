@@ -1,0 +1,685 @@
+1> go to window
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  ", "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is closed. Through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " you see a "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+2> ambulate
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+3> north
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+4> ambulate to window
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+5> ambulate to tree
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+6> rotate to window
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+7> rotate to tree
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "!"
+dir = "NORTH"
+hunger = 1
+loc = "KITCHEN"
+8> operate window
+p
+  "You "
+  a cmd="OPERATE THE WINDOW"
+    "OPERATE THE WINDOW"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " does not want to stay open on its own! You hold it open for now."
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+9> ambulate
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+10> north
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+11> ambulate to window
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+12> ambulate to tree
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+13> rotate to window
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+14> rotate to tree
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "!"
+dir = "NORTH"
+hunger = 1
+is_WINDOW_open = true
+loc = "KITCHEN"
+15> go to door
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " slides closed as you "
+  a cmd="ROTATE"
+    "ROTATE"
+  " away."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+p
+  "You receive a text message from "
+  a cmd="SWEETIE"
+    "SWEETIE"
+  "!"
+p
+  "“I’ll be home soon!”"
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+16> ambulate
+p
+  "You could "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  "."
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+17> west
+p
+  "You could "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  "."
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+18> ambulate to door
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "!"
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+19> ambulate to lawn
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+20> rotate to door
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "!"
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+21> rotate to lawn
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+22> operate door
+p
+  "You "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  ". The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is now open. Through the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " you can see the "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  "."
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+23> ambulate
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+24> west
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+25> ambulate to door
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "!"
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+26> ambulate to lawn
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+27> rotate to door
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "!"
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+28> rotate to lawn
+p
+  "You deleted most of your navigation data to make room for more episodes of Buffy the Vampire Slayer! Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " agreed that this was logical."
+dir = "WEST"
+hunger = 2
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "LIVING ROOM"
+scom = true
+29> go to fridge
+p
+  "You "
+  a cmd="ROTATE"
+    "ROTATE"
+  " twice, "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is closed."
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+30> ambulate
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+31> south
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+32> ambulate to fridge
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+33> ambulate to hive
+p
+  "What HIVE?"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+34> rotate to fridge
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+35> rotate to hive
+p
+  "What HIVE?"
+dir = "SOUTH"
+hunger = 3
+is_FRONT_DOOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+scom = true
+36> operate fridge
+p
+  "You "
+  a cmd="OPERATE THE REFRIGERATOR"
+    "OPERATE THE REFRIGERATOR"
+  ". The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is now open."
+p
+  "A swarm of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " flies out!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " emit an uncanny chittering noise!"
+--MORE--
+p
+  "The noise resolves itself into words:"
+--MORE--
+p
+  "“YES THANK YOU SO MUCH IT WAS GETTING SO CROWDED IN THERE!”"
+--MORE--
+p
+  "Every cubic centimeter of the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is packed with complex matrix of unidentified semi-transparent organic matter. It must be some kind of "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". It is riddled with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The entire apartment is now crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " does not want to stay open on its own! You hold it open for now."
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+37> ambulate
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+38> south
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+39> ambulate to fridge
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+40> ambulate to hive
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+41> rotate to fridge
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+42> rotate to hive
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  "!"
+bugs = true
+dir = "SOUTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = true
+is_WINDOW_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true

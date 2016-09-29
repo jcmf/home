@@ -1,0 +1,176 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    !{'<!--UUID://F68C89466946704930EC9FE58D31431C//-->'}
+
+    meta = load('meta')
+    title #{meta.title}
+
+    link(rel='shortcut icon', href=url('dbowsman_robo960_cropped.jpg'))
+    style(type='text/css') !{bg('cover', 'dbowsman_robo960.jpg')}
+    style(type='text/css') !{font('Press Start 2P')}
+    script(type='text/javascript') !{read('jquery-1.7.2.min.js')}
+
+    :stylus(compress=true)
+      @import nib
+
+      global-reset()
+      input, a
+        reset-box-model()
+        reset-font()
+        color inherit
+        background inherit
+        line-height inherit
+        text-decoration inherit
+
+      FG = #ccc
+      BG = #000
+      INPUT = #999
+      LINK = #88c
+      LINK_HOVER = #aaf
+
+      body
+        word-wrap break-word
+        hyphens auto
+        font-family 'Press Start 2P', monospace
+        color FG
+        background BG
+        line-height 1.5
+        font-size 16px
+
+      @media all and (max-width: 480px)
+        body
+          font-size 8px
+      @media all and (max-height: 320px)
+        body
+          font-size 8px
+      @media all and (min-width: 960px) and (min-height: 960px)
+        body
+          font-size 24px
+
+      #bg
+        fixed top left
+        bottom 0
+        right 0
+        background-size contain
+        background-position center
+        background-repeat no-repeat
+        z-index -1
+
+      #intro
+        text-shadow 0 0 1em black
+        padding 1em
+      #intro-body
+        background rgba(black, 0.4)
+      #credits-body, #notes-body
+        background rgba(black, 0.8)
+
+      #game, #intro-body, #credits-body, #notes-body
+        margin 0 auto
+        padding 0.5em
+        max-width 40em
+        overflow-x hidden
+
+      .cmd, #input, #prompt, .prompt
+        color INPUT
+
+      h1
+        font-size 200%
+        text-align center
+
+      h1, h2, h3, p, ul, .request, #quit
+        padding-bottom 0.75em
+
+      li
+        padding-left 2em
+        text-indent -2em
+
+      a, .link, .rewind, .start, #more
+        cursor pointer
+        color LINK
+        &:hover
+          color LINK_HOVER
+
+      .rewind, #quit
+        float right
+        padding-left 1em
+
+      #output
+        clear right
+
+    script(type='text/javascript') !{script('ui', true)}
+
+  body(lang='en')
+    #intro
+      #bg.cover
+      h1#title #{meta.title}
+
+      #intro-body
+
+        p#loading(style='display:none')
+          | Loading saved game....
+        p#404(style='display:none')
+          | Saved game not found!
+
+        .menu
+          span.start
+            | PLAY
+          #{' \u2022 '}
+          a(href='#credits')
+            | CREDITS
+          #{' \u2022 '}
+          a(href='#notes')
+            | NOTES
+          span.update
+            #{' \u2022 '}
+            a(href='http://toastball.net/games/home/')
+              | UPDATE
+
+      #credits-body(style='display:none')
+        #credits
+
+        .menu
+          span.start
+            | PLAY
+          #{' \u2022 '}
+          a(href='#notes')
+            | NOTES
+          #{' \u2022 '}
+          a.top(href='.')
+            | BACK
+
+      #notes-body(style='display:none')
+
+        p.menu
+          span.start
+            | PLAY
+          #{' \u2022 '}
+          a(href='#credits')
+            | CREDITS
+          #{' \u2022 '}
+          a.top(href='.')
+            | BACK
+
+        #notes
+
+        .menu
+          span.start
+            | PLAY
+          #{' \u2022 '}
+          a(href='#credits')
+            | CREDITS
+          #{' \u2022 '}
+          a.top(href='.')
+            | BACK
+
+    #game(style='display:none')
+      #quit
+        a.top(href='.')
+          | [quit]
+      #output
+      #more(style='display:none') [more]
+      form#form(style='display:none')
+        span#prompt #{'>'}
+        input#input(autocomplete='off', spellcheck='false',
+            speech, x-webkit-speech)

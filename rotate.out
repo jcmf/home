@@ -1,0 +1,624 @@
+1> enumerate
+p
+  "Valid commands include: "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  ", "
+  a cmd="ROTATE"
+    "ROTATE"
+  ", "
+  a cmd="CONTEMPLATE"
+    "CONTEMPLATE"
+  ", "
+  a cmd="OPERATE"
+    "OPERATE"
+  ", "
+  a cmd="COMMUNICATE"
+    "COMMUNICATE"
+  "."
+p
+  "You could "
+  a cmd="ENUMERATE"
+    "ENUMERATE"
+  " valid commands again!"
+dir = "NORTH"
+loc = "FUTON"
+2> rotate
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " and "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "."
+dir = "EAST"
+hunger = 1
+loc = "LIVING ROOM"
+3> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "EAST"
+hunger = 1
+loc = "LIVING ROOM"
+4> go to futon
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "You receive a text message from "
+  a cmd="SWEETIE"
+    "SWEETIE"
+  "!"
+p
+  "“I’ll be home soon!”"
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "SOUTH"
+hunger = 2
+loc = "LIVING ROOM"
+scom = true
+5> rotate right
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+dir = "WEST"
+hunger = 3
+loc = "LIVING ROOM"
+scom = true
+6> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "WEST"
+hunger = 3
+loc = "LIVING ROOM"
+scom = true
+7> go to futon
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "There could be something delicious in the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+dir = "SOUTH"
+hunger = 4
+loc = "LIVING ROOM"
+scom = true
+8> rotate east
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "."
+dir = "EAST"
+hunger = 5
+loc = "LIVING ROOM"
+scom = true
+9> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "EAST"
+hunger = 5
+loc = "LIVING ROOM"
+scom = true
+10> go to futon
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+dir = "SOUTH"
+hunger = 6
+loc = "LIVING ROOM"
+scom = true
+11> rotate left
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "."
+dir = "EAST"
+hunger = 7
+loc = "LIVING ROOM"
+scom = true
+12> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "EAST"
+hunger = 7
+loc = "LIVING ROOM"
+scom = true
+13> go to futon
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "You could "
+  a cmd="OPERATE THE REFRIGERATOR"
+    "OPERATE THE REFRIGERATOR"
+  "."
+dir = "SOUTH"
+hunger = 8
+loc = "LIVING ROOM"
+scom = true
+14> rotate west
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+dir = "WEST"
+hunger = 9
+loc = "LIVING ROOM"
+scom = true
+15> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "WEST"
+hunger = 9
+loc = "LIVING ROOM"
+scom = true
+16> go to futon
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+17> rotate south
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+18> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+19> go to futon
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+20> south
+p
+  "You would collide with the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+21> go to living room
+p
+  "You are already standing in the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+22> go to futon
+p
+  "You are already facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "!"
+dir = "SOUTH"
+hunger = 10
+loc = "LIVING ROOM"
+scom = true
+23> east
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " is closed."
+dir = "EAST"
+hunger = 11
+loc = "KITCHEN"
+scom = true
+24> go to living room
+p
+  "You "
+  a cmd="ROTATE"
+    "ROTATE"
+  " twice and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+dir = "WEST"
+hunger = 12
+loc = "LIVING ROOM"
+scom = true
+25> go to futon
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ". You could "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to go there."
+p
+  "From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+dir = "SOUTH"
+hunger = 13
+loc = "LIVING ROOM"
+scom = true
+26> west
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+dir = "WEST"
+hunger = 14
+loc = "LIVING ROOM"
+scom = true

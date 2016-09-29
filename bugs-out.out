@@ -1,0 +1,1097 @@
+1> ambulate to refrigerator
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  ", "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " again."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is closed."
+dir = "SOUTH"
+hunger = 1
+loc = "KITCHEN"
+2> operate refrigerator
+p
+  "You "
+  a cmd="OPERATE THE REFRIGERATOR"
+    "OPERATE THE REFRIGERATOR"
+  ". The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is now open."
+p
+  "A swarm of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " flies out!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " emit an uncanny chittering noise!"
+--MORE--
+p
+  "The noise resolves itself into words:"
+--MORE--
+p
+  "“YES THANK YOU SO MUCH IT WAS GETTING SO CROWDED IN THERE!”"
+--MORE--
+p
+  "Every cubic centimeter of the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is packed with complex matrix of unidentified semi-transparent organic matter. It must be some kind of "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". It is riddled with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The entire apartment is now crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " does not want to stay open on its own! You hold it open for now."
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+3> ambulate to window
+p
+  "You "
+  a cmd="ROTATE"
+    "ROTATE"
+  " twice."
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " swings shut as you "
+  a cmd="ROTATE"
+    "ROTATE"
+  " away."
+p
+  "“NO WAIT COME BACK THE "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " HAS CLOSED AGAIN WE ARE DOOMED!”"
+--MORE--
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is closed. Through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " you see a "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+bugs = true
+dir = "NORTH"
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+4> contemplate tree
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is outside the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+bugs = true
+dir = "NORTH"
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+5> communicate with bugs about tree
+p
+  "“YES WE REMEMBER THIS FROM ANCIENT TIMES. WE MUST ESTABLISH A SUPPLY ROUTE, OR OUR PEOPLE WILL STARVE.”"
+bugs = true
+dir = "NORTH"
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+6> ambulate to door
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+bugs = true
+dir = "WEST"
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+7> contemplate lawn
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is beyond the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+bugs = true
+dir = "WEST"
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+8> communicate with bugs about lawn
+p
+  "“YES THAT SOUNDS OKAY BUT GRASS IS NOT REALLY OUR THING. WE ARE MORE INTERESTED IN THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ".”"
+bugs = true
+dir = "WEST"
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+9> operate door
+p
+  "You "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  ". The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is now open. Through the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " you can see the "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  "."
+p
+  "Some of the "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " fly out the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "! Soon there are "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " flying back and forth through the open "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+10> contemplate lawn
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is beyond the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+11> communicate with bugs about lawn
+p
+  "“YES THE "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " IS OKAY BUT WE PREFER THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". IT IS RIGHT AROUND THE CORNER.”"
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+12> operate door
+p
+  "You "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  ". The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is now closed."
+p
+  "“EXCUSE US PLEASE BUT SOMETHING AWFUL HAS OCCURRED. WE CAN NO LONGER GET THROUGH THE DOOR!”"
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+13> contemplate lawn
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is beyond the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+14> communicate with bugs about lawn
+p
+  "“YES THE "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " IS OKAY BUT WE PREFER THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". IT IS RIGHT AROUND THE CORNER.”"
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+15> ambulate to window
+p
+  "You "
+  a cmd="ROTATE"
+    "ROTATE"
+  " twice, "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is closed. Through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " you see a "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+16> contemplate tree
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is outside the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+17> communicate with bugs about tree
+p
+  "“YES WE MUST RE-ESTABLISH A SUPPLY ROUTE TO THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " OR WE ARE DOOMED TO STARVATION. THANK YOU FOR ASKING!”"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+18> ambulate to door
+p
+  "You "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is closed."
+p
+  "The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = false
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+19> operate door
+p
+  "You "
+  a cmd="OPERATE THE FRONT DOOR"
+    "OPERATE THE FRONT DOOR"
+  ". The "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " is now open. Through the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " you can see the "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  "."
+p
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " begin to fly back and forth through the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+20> contemplate lawn
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is beyond the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+21> communicate with bugs about lawn
+p
+  "“YES THE "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " IS OKAY BUT WE PREFER THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". IT IS RIGHT AROUND THE CORNER.”"
+bugs = true
+dir = "WEST"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "LIVING ROOM"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+22> ambulate to window
+p
+  "You "
+  a cmd="ROTATE"
+    "ROTATE"
+  " twice, "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is closed. Through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " you see a "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+23> contemplate tree
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is outside the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+24> communicate with bugs about tree
+p
+  "“YES WE HAVE ESTABLISHED A SUPPLY ROUTE TO THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". HOWEVER WE ARE UNABLE TO RETURN ITS DELICIOUS NUTRIENTS TO THE "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". OUR CIVILIZATION IS DOOMED. THANK YOU SO MUCH FOR YOUR ASSISTANCE.”"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+shoo_LAWN = true
+shoo_TREE = true
+25> operate window
+p
+  "You "
+  a cmd="OPERATE THE WINDOW"
+    "OPERATE THE WINDOW"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " does not want to stay open on its own! You hold it open for now."
+p
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " begin to fly back and forth through the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " between the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " and the "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  "."
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+is_WINDOW_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_good_WINDOW = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+saw_you_good_WINDOW = true
+shoo_LAWN = true
+shoo_TREE = true
+26> contemplate tree
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is outside the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  " is crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+is_WINDOW_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_good_WINDOW = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+saw_you_good_WINDOW = true
+shoo_LAWN = true
+shoo_TREE = true
+27> communicate with bugs about tree
+p
+  "“YES WE HAVE ESTABLISHED A SUPPLY ROUTE TO THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". HOWEVER WE ARE UNABLE TO RETURN ITS DELICIOUS NUTRIENTS TO THE "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". OUR CIVILIZATION IS DOOMED. THANK YOU SO MUCH FOR YOUR ASSISTANCE.”"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+is_WINDOW_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_good_WINDOW = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+saw_you_good_WINDOW = true
+shoo_LAWN = true
+shoo_TREE = true
+28> contemplate yard
+p
+  "You could "
+  a cmd="AMBULATE TO THE LAWN"
+    "AMBULATE TO THE LAWN"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+is_WINDOW_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_good_WINDOW = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+saw_you_good_WINDOW = true
+shoo_LAWN = true
+shoo_TREE = true
+29> communicate with bugs about yard
+p
+  "“YES THE "
+  a cmd="CONTEMPLATE LAWN"
+    "LAWN"
+  " IS OKAY BUT WE PREFER THE "
+  a cmd="CONTEMPLATE TREE"
+    "TREE"
+  ". IT IS RIGHT AROUND THE CORNER.”"
+bugs = true
+dir = "NORTH"
+is_FRONT_DOOR_open = true
+is_REFRIGERATOR_open = false
+is_WINDOW_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_FRONT_DOOR = true
+saw_good_REFRIGERATOR = true
+saw_good_WINDOW = true
+saw_you_bad_FRONT_DOOR = true
+saw_you_bad_REFRIGERATOR = true
+saw_you_good_FRONT_DOOR = true
+saw_you_good_REFRIGERATOR = true
+saw_you_good_WINDOW = true
+shoo_LAWN = true
+shoo_TREE = true

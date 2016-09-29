@@ -1,0 +1,334 @@
+1> n
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  "."
+p
+  "On the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  " are a "
+  a cmd="CONTEMPLATE SOLDERING TOOL"
+    "SOLDERING TOOL"
+  " and a "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  "."
+dir = "NORTH"
+hunger = 1
+loc = "LIVING ROOM"
+2> operate workbench
+p
+  "You "
+  a cmd="OPERATE THE SOLDERING TOOL"
+    "OPERATE THE SOLDERING TOOL"
+  " and mount the "
+  a cmd="CONTEMPLATE LASER"
+    "LASER"
+  " on your head!"
+dir = "NORTH"
+hunger = 1
+laser = true
+loc = "LIVING ROOM"
+3> e
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " and "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " is closed."
+p
+  "You receive a text message from "
+  a cmd="SWEETIE"
+    "SWEETIE"
+  "!"
+p
+  "“I’ll be home soon!”"
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "EAST"
+hunger = 2
+laser = true
+loc = "KITCHEN"
+scom = true
+4> s
+p
+  "You "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  "."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is closed."
+dir = "SOUTH"
+hunger = 3
+laser = true
+loc = "KITCHEN"
+scom = true
+5> operate refrigerator
+p
+  "You "
+  a cmd="OPERATE THE REFRIGERATOR"
+    "OPERATE THE REFRIGERATOR"
+  ". The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is now open."
+p
+  "A swarm of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " flies out!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " emit an uncanny chittering noise!"
+--MORE--
+p
+  "The noise resolves itself into words:"
+--MORE--
+p
+  "“YES THANK YOU SO MUCH IT WAS GETTING SO CROWDED IN THERE!”"
+--MORE--
+p
+  "Every cubic centimeter of the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is packed with complex matrix of unidentified semi-transparent organic matter. It must be some kind of "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". It is riddled with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The entire apartment is now crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " does not want to stay open on its own! You hold it open for now."
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+laser = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+6> operate laser
+p
+  "You "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  ". The beam strikes the "
+  a cmd="CONTEMPLATE HIVE"
+    "H"
+  "... wait, what is this?"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " are flying into the path of the beam!"
+--MORE--
+p
+  "As each bug reaches the beam it bursts into flames!"
+--MORE--
+p
+  "In your surprise, you cease to "
+  a cmd="OPERATE THE LASER"
+    "OPERATE THE LASER"
+  "."
+bugs = true
+dir = "SOUTH"
+hit_HIVE = 1
+is_REFRIGERATOR_open = true
+laser = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_laser = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+used_laser = true
+7> OPERATE THE LASER
+p
+  "Once again the "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " fly into the path of the beam, sacrificing themselves to protect the "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  "!"
+--MORE--
+p
+  "“NOOO STOP THIS IS MADNESS!!!”"
+--MORE--
+p
+  "You are no longer "
+  a cmd="OPERATE THE LASER"
+    "OPERATING THE LASER"
+  "."
+bugs = true
+dir = "SOUTH"
+hit_HIVE = 2
+is_REFRIGERATOR_open = true
+laser = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_laser = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+used_laser = true
+8> OPERATE LASER
+p
+  "That is not a valid command!"
+--MORE--
+p
+  "Or is it?"
+--MORE--
+p
+  "Maybe it is."
+--MORE--
+p
+  "Calm down. You do not want to blow another capacitor!"
+--MORE--
+p
+  "That is better."
+--MORE--
+p
+  "You are standing in the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  "."
+p
+  "What were you doing here, again?"
+bugs = true
+dir = "SOUTH"
+hit_HIVE = 3
+is_REFRIGERATOR_open = true
+laser = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_laser = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+used_laser = true
+9> communicate with bugs about refrigerator
+p
+  "“YES THE "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " IS WHERE OUR CIVILIZATION EVOLVED. IT WILL ALWAYS BE OUR NATIVE LAND! UNFORTUNATELY WE HAVE NOT BEEN ABLE TO ESTABLISH A FOOD SUPPLY ROUTE. OUR CIVILIZATION IS DOOMED. THANK YOU SO MUCH FOR ASKING!”"
+bugs = true
+dir = "SOUTH"
+hit_HIVE = 3
+is_REFRIGERATOR_open = true
+laser = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_laser = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+shoo_REFRIGERATOR = true
+used_laser = true

@@ -1,0 +1,195 @@
+1> contemplate BUGS
+p
+  "What BUGS?"
+dir = "NORTH"
+loc = "FUTON"
+2> contemplate CUPBOARD
+p
+  "The last time you saw it, the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " was closed."
+p
+  "You could "
+  a cmd="AMBULATE TO THE CUPBOARD"
+    "AMBULATE TO THE CUPBOARD"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE CUPBOARD"
+    "COMMUNICATE ABOUT THE CUPBOARD"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+3> contemplate FRONT DOOR
+p
+  "The last time you saw it, the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  " was closed."
+p
+  "You could "
+  a cmd="AMBULATE TO THE FRONT DOOR"
+    "AMBULATE TO THE FRONT DOOR"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE FRONT DOOR"
+    "COMMUNICATE ABOUT THE FRONT DOOR"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+4> contemplate FUTON
+p
+  "You are sitting on the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "."
+p
+  "You could "
+  a cmd="COMMUNICATE ABOUT THE FUTON"
+    "COMMUNICATE ABOUT THE FUTON"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+5> contemplate HIVE
+p
+  "What HIVE?"
+dir = "NORTH"
+loc = "FUTON"
+6> contemplate KITCHEN
+p
+  "You could "
+  a cmd="AMBULATE TO THE KITCHEN"
+    "AMBULATE TO THE KITCHEN"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE KITCHEN"
+    "COMMUNICATE ABOUT THE KITCHEN"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+7> contemplate LASER
+p
+  "You could "
+  a cmd="AMBULATE TO THE LASER"
+    "AMBULATE TO THE LASER"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LASER"
+    "COMMUNICATE ABOUT THE LASER"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+8> contemplate LIVING ROOM
+p
+  "You are sitting on the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  " facing the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "You could "
+  a cmd="AMBULATE TO THE LIVING ROOM"
+    "AMBULATE TO THE LIVING ROOM"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LIVING ROOM"
+    "COMMUNICATE ABOUT THE LIVING ROOM"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+9> contemplate ORGANIC LIFE FORM
+p
+  "“ORGANIC LIFE FORM” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+dir = "NORTH"
+loc = "FUTON"
+10> contemplate REFRIGERATOR
+p
+  "The last time you saw it, the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " was closed."
+p
+  "You could "
+  a cmd="AMBULATE TO THE REFRIGERATOR"
+    "AMBULATE TO THE REFRIGERATOR"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE REFRIGERATOR"
+    "COMMUNICATE ABOUT THE REFRIGERATOR"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+11> contemplate SCHOOL
+p
+  "“SCHOOL” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+dir = "NORTH"
+loc = "FUTON"
+12> contemplate SOLDERING TOOL
+p
+  "You could "
+  a cmd="AMBULATE TO THE SOLDERING TOOL"
+    "AMBULATE TO THE SOLDERING TOOL"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE SOLDERING TOOL"
+    "COMMUNICATE ABOUT THE SOLDERING TOOL"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+13> contemplate SWEETIE
+p
+  "Your "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " is still at work."
+p
+  "You could "
+  a cmd="COMMUNICATE WITH SWEETIE"
+    "COMMUNICATE WITH SWEETIE"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+14> contemplate TREE
+p
+  "You could "
+  a cmd="AMBULATE TO THE TREE"
+    "AMBULATE TO THE TREE"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE TREE"
+    "COMMUNICATE ABOUT THE TREE"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+15> contemplate WINDOW
+p
+  "The last time you saw it, the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  " was closed."
+p
+  "You could "
+  a cmd="AMBULATE TO THE WINDOW"
+    "AMBULATE TO THE WINDOW"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE WINDOW"
+    "COMMUNICATE ABOUT THE WINDOW"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+16> contemplate WORKBENCH
+p
+  "You could "
+  a cmd="AMBULATE TO THE WORKBENCH"
+    "AMBULATE TO THE WORKBENCH"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE WORKBENCH"
+    "COMMUNICATE ABOUT THE WORKBENCH"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+17> contemplate YARD
+p
+  "You could "
+  a cmd="AMBULATE TO THE LAWN"
+    "AMBULATE TO THE LAWN"
+  " or "
+  a cmd="COMMUNICATE ABOUT THE LAWN"
+    "COMMUNICATE ABOUT THE LAWN"
+  "."
+dir = "NORTH"
+loc = "FUTON"

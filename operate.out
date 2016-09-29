@@ -1,0 +1,48 @@
+1> operate fridge
+p
+  "You could "
+  a cmd="AMBULATE TO THE REFRIGERATOR"
+    "AMBULATE TO THE REFRIGERATOR"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+2> operate bugs
+p
+  "What BUGS?"
+dir = "NORTH"
+loc = "FUTON"
+3> operate hive
+p
+  "What HIVE?"
+dir = "NORTH"
+loc = "FUTON"
+4> operate laser
+p
+  "You could "
+  a cmd="AMBULATE TO THE LASER"
+    "AMBULATE TO THE LASER"
+  "."
+dir = "NORTH"
+loc = "FUTON"
+5> operate workbench
+p
+  "You cannot "
+  a cmd="OPERATE"
+    "OPERATE"
+  " the "
+  a cmd="CONTEMPLATE WORKBENCH"
+    "WORKBENCH"
+  "!"
+dir = "NORTH"
+loc = "FUTON"
+6> operate sweetie
+p
+  "You cannot "
+  a cmd="OPERATE"
+    "OPERATE"
+  " "
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  "!"
+dir = "NORTH"
+loc = "FUTON"

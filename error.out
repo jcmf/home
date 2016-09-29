@@ -1,0 +1,12 @@
+1> X8556657
+p class="error"
+  "Error: Error: error reporting test"
+p
+  "Sorry! The game got confused. This isn’t supposed to happen."
+p
+  "Try using your browser’s Back button, or one of the [undo] links on the right. Those should still work."
+ERROR_TEST = true
+dir = "NORTH"
+loc = "FUTON"
+over = true
+--DONE--

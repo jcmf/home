@@ -1,0 +1,577 @@
+1> go to fridge
+p
+  "You "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  ", "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  ", "
+  a cmd="AMBULATE"
+    "AMBULATE"
+  " to the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " and "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " again."
+p
+  "You are now facing the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  ". From here you could "
+  a cmd="ROTATE LEFT"
+    "ROTATE LEFT"
+  " to face the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " or "
+  a cmd="ROTATE RIGHT"
+    "ROTATE RIGHT"
+  " to face the "
+  a cmd="CONTEMPLATE LIVING ROOM"
+    "LIVING ROOM"
+  "."
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is closed."
+dir = "SOUTH"
+hunger = 1
+loc = "KITCHEN"
+2> open fridge
+p
+  "You "
+  a cmd="OPERATE THE REFRIGERATOR"
+    "OPERATE THE REFRIGERATOR"
+  ". The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is now open."
+p
+  "A swarm of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " flies out!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " emit an uncanny chittering noise!"
+--MORE--
+p
+  "The noise resolves itself into words:"
+--MORE--
+p
+  "“YES THANK YOU SO MUCH IT WAS GETTING SO CROWDED IN THERE!”"
+--MORE--
+p
+  "Every cubic centimeter of the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " is packed with complex matrix of unidentified semi-transparent organic matter. It must be some kind of "
+  a cmd="CONTEMPLATE HIVE"
+    "HIVE"
+  ". It is riddled with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The entire apartment is now crawling with "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "!"
+--MORE--
+p
+  "The "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " does not want to stay open on its own! You hold it open for now."
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+3> communicate with sweetie about BUGS
+p
+  a cmd="CONTEMPLATE SWEETIE"
+    "SWEETIE"
+  " is always quick to reply to your text messages, even when he is at work!"
+p
+  "“They sound horrifying!”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+scom = true
+4> communicate with sweetie about CUPBOARD
+p
+  "“"
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "? Oh dear! If the "
+  a cmd="CONTEMPLATE CUPBOARD"
+    "CUPBOARD"
+  " is overrun, we might need to find somewhere else to store batteries and things. By the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  ", maybe? Did you say they were in there too? What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Have the "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " gotten to it?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+5> communicate with sweetie about FRONT DOOR
+p
+  "“How will we get in and out of our apartment if there are "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " all over the "
+  a cmd="CONTEMPLATE FRONT DOOR"
+    "FRONT DOOR"
+  "? What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Have the "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " gotten to it?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+6> communicate with sweetie about FUTON
+p
+  "“That does not sound conducive to cuddles on the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "! There must be some way to get them off!”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+7> communicate with sweetie about HIVE
+p
+  "“I guess there is no question of keeping anything in the "
+  a cmd="CONTEMPLATE REFRIGERATOR"
+    "REFRIGERATOR"
+  " anymore. What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+8> communicate with sweetie about KITCHEN
+p
+  "“If the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  " is overrun, we might need to find somewhere else to store batteries and things. What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+9> communicate with sweetie about LASER
+p
+  "“I think laser-cut jigsaw puzzles are bound to be a best seller!”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+10> communicate with sweetie about LIVING ROOM
+p
+  "“We have to live somewhere. What will we do? What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+11> communicate with sweetie about ORGANIC LIFE FORM
+p
+  "“ORGANIC LIFE FORM” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+12> communicate with sweetie about REFRIGERATOR
+p
+  "“So they have been in there since we moved in? Longer, I guess. What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+13> communicate with sweetie about SCHOOL
+p
+  "“SCHOOL” is not a valid thing! You can tell because it does not turn blue when you try to imagine it."
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+14> communicate with sweetie about SOLDERING TOOL
+p
+  "“Can you still use the "
+  a cmd="CONTEMPLATE SOLDERING TOOL"
+    "SOLDERING TOOL"
+  " if it has "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " on it? What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+15> communicate with sweetie about SWEETIE
+p
+  "“I’m doing okay. The kids are surprisingly well-behaved. By human standards anyway. Ha ha. Seriously, though. Can hardly wait to come home to you.”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+told_SWEETIE = false
+16> communicate with sweetie about TREE
+p
+  "“They are crab apples. The humans do not like to eat them.”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+told_SWEETIE = false
+told_TREE = false
+17> communicate with sweetie about WINDOW
+p
+  "“Yes, presumably it is better to let them out the "
+  a cmd="CONTEMPLATE WINDOW"
+    "WINDOW"
+  ". More "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  " outside means fewer in the "
+  a cmd="CONTEMPLATE KITCHEN"
+    "KITCHEN"
+  ". That is logical! What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+told_SWEETIE = false
+told_TREE = false
+told_WINDOW = true
+18> communicate with sweetie about WORKBENCH
+p
+  "“Will you be able to work like that? What about the "
+  a cmd="CONTEMPLATE FUTON"
+    "FUTON"
+  "? Is it still full of "
+  a cmd="CONTEMPLATE BUGS"
+    "BUGS"
+  "?”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+told_SWEETIE = false
+told_TREE = false
+told_WINDOW = true
+told_WORKBENCH = true
+19> communicate with sweetie about YARD
+p
+  "“Maybe if we ignore it, it will revert to a lower energy state.”"
+bugs = true
+dir = "SOUTH"
+is_REFRIGERATOR_open = true
+loc = "KITCHEN"
+saw_bad_CUPBOARD = true
+saw_bad_FRONT_DOOR = true
+saw_bad_REFRIGERATOR = true
+saw_bad_WINDOW = true
+saw_good_REFRIGERATOR = true
+saw_you_good_REFRIGERATOR = true
+sbugs = true
+scom = true
+told_CUPBOARD = true
+told_FRONT_DOOR = true
+told_FUTON = true
+told_HIVE = true
+told_KITCHEN = true
+told_LASER = false
+told_LAWN = false
+told_LIVING_ROOM = true
+told_REFRIGERATOR = true
+told_SOLDERING_TOOL = true
+told_SWEETIE = false
+told_TREE = false
+told_WINDOW = true
+told_WORKBENCH = true
