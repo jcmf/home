@@ -1,7 +1,7 @@
 exports.title = 'HOME SWEETIE-BOT HOME'
-exports.version = 2
+exports.version = '2.0.1'
 exports.credits = """
-  + version #{exports.version} released 2012-06-24
+  + version #{exports.version} released 2016-10-09
   + created by {JACQUES FRECHET|ifwiki.org/index.php/Jacques_Frechet}
   + for the {COVER STORIES|ifwiki.org/index.php/Cover_Stories} event
     organized by {SAM KABO ASHWELL|ifwiki.org/index.php/Sam_Kabo_Ashwell}

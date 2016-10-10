@@ -5,12 +5,12 @@ assert = (ok, msg) -> if not ok then error msg
 
 meta = require './meta'
 
-nameFns = (k, v) ->
+naymeFns = (k, v) ->
   switch typeof v
     when 'function' then try v.displayName = k
     when 'object'
       for subk, subv of v
-        nameFns "#{k}.#{subk}", subv
+        naymeFns "#{k}.#{subk}", subv
   return
 
 {encode} = require './json'
@@ -78,10 +78,10 @@ locs =
     scomBugs: -> "We have to live somewhere.  What will we do?"
     EAST: to: 'KITCHEN'
     WEST:
-      name: 'FRONT DOOR'
+      nayme: 'FRONT DOOR'
       syns: 'DOOR'
       bump: (msg, what) ->
-        if @isOpen what then @noNav things[what].open.name
+        if @isOpen what then @noNav things[what].open.nayme
         else "You could {OPERATE #{the what}}."
       shooable: -> @isGood 'WINDOW'
       bcom: (what) -> """
@@ -171,7 +171,7 @@ locs =
           """
         return msg
       open:
-        name: 'LAWN'
+        nayme: 'LAWN'
         syns: ['FRONT LAWN', 'YARD', 'FRONT YARD', 'GRASS']
         prep: 'beyond'
         noNav: true
@@ -196,7 +196,7 @@ locs =
           Plenty of space for them out there.
           """
     NORTH:
-      name: 'WORKBENCH'
+      nayme: 'WORKBENCH'
       syns: 'BENCH'
       use: -> @toggleLaser()
       desc: (msg) ->
@@ -287,7 +287,7 @@ locs =
       to store batteries and things.
       """
     NORTH:
-      name: 'WINDOW'
+      nayme: 'WINDOW'
       hit: (hits, msg, what) ->
         msg += if hits is 1
           " The beam shatters the #{link what}!" + if not @bugs then ''
@@ -398,7 +398,7 @@ locs =
         Through the #{link what} you see a #{link 'TREE'}.
         """
       open:
-        name: 'TREE'
+        nayme: 'TREE'
         syns: ['CRAB APPLES', 'CRABAPPLES', 'APPLES', 'APPLE', 'CRAB']
         prep: 'outside'
         shooable: false
@@ -431,7 +431,7 @@ locs =
             THANK YOU SO MUCH FOR YOUR ASSISTANCE.
             """
     EAST:
-      name: 'CUPBOARD'
+      nayme: 'CUPBOARD'
       syns: 'COUNTER PANTRY'
       desc: (msg, what) ->
         return msg if @bugs or not @isOpen(what)
@@ -490,7 +490,7 @@ locs =
         Did you say they were in there too?
         """
     SOUTH:
-      name: 'REFRIGERATOR'
+      nayme: 'REFRIGERATOR'
       syns: 'FRIDGE REFRIDGERATOR ICEBOX FREEZER'
       postHit: (hits, msg, what) ->
         return @enterBugs msg if not @bugs
@@ -572,7 +572,7 @@ locs =
           THANK YOU SO MUCH FOR ASKING!
           """
       open:
-        name: 'HIVE'
+        nayme: 'HIVE'
         syns: [
           'NEST'
           'COLONY'
@@ -691,7 +691,7 @@ locs =
                 '''
               ]
 
-nameFns 'locs', locs
+naymeFns 'locs', locs
 
 people =
   SWEETIE:
@@ -806,39 +806,39 @@ people =
       SUPER SMART AND STUFF.  THANK YOU SO MUCH FOR ASKING!
       """
 
-nameFns 'people', people
+naymeFns 'people', people
 
 things = {}
 do ->
   addThing = (thing) ->
-    if thing.name
-      names = thing.syns or []
-      names = names.split /\s+/g if names not instanceof Array
-      names.unshift thing.name if thing.name not in names
-      for name in names
-        assert name not of things, "dup thing #{name}"
-        things[name] = thing
+    if thing.nayme
+      naymes = thing.syns or []
+      naymes = naymes.split /\s+/g if naymes not instanceof Array
+      naymes.unshift thing.nayme if thing.nayme not in naymes
+      for nayme in naymes
+        assert nayme not of things, "dup thing #{nayme}"
+        things[nayme] = thing
     for k, v of thing.items or {}
-      v.name or= k
-      v.where or= thing.name
+      v.nayme or= k
+      v.where or= thing.nayme
       addThing v
     if thing.open
-      thing.open.where or= thing.name
+      thing.open.where or= thing.nayme
       addThing thing.open
 
   for lk, lv of locs
-    lv.name or= lk
+    lv.nayme or= lk
     addThing lv
     for dk, dv of lv
       addThing dv if dk of right
 
   for pk, pv of people
-    pv.name or= pk
+    pv.nayme or= pk
     addThing pv
 
 the = (what) ->
   return "THE #{what}" if not thing = things[what]
-  return thing.theName or "THE #{thing.name}"
+  return thing.theName or "THE #{thing.nayme}"
 
 standingInThe = (what) ->
   "#{things[what]?.standingIn or 'standing in'} the #{link what}"
@@ -858,7 +858,7 @@ do ->
     lv.nav = nav = {}
     nav[lk] = null
     for dk, dv of lv
-      if dest = dv.name
+      if dest = dv.nayme
         assert dest not of dests, dest
         dests[dest] = loc: lk, dir: dk
         assert dest of things, "!things.#{dest}"
@@ -992,10 +992,10 @@ verbs =
 
     if not what
       ahead = @getAhead()
-      name = ahead.name
+      nayme = ahead.nayme
       return if ahead.use
-        assert name, @loc
-        msg = "You could {OPERATE THE #{name}}"
+        assert nayme, @loc
+        msg = "You could {OPERATE THE #{nayme}}"
         if @laser then msg += " or {OPERATE THE LASER}"
         return "#{msg}."
       else if @laser then return "You could {OPERATE THE LASER}."
@@ -1005,9 +1005,9 @@ verbs =
         You could {AMBULATE} to it.
         """
       else
-        assert name, @loc
+        assert nayme, @loc
         """
-        You cannot {OPERATE} the #{link name}!
+        You cannot {OPERATE} the #{link nayme}!
         You could {ROTATE} to face something else.
         """
 
@@ -1075,7 +1075,7 @@ verbs =
 
     return people[who].talk.call this, what
 
-nameFns 'verbs', verbs
+naymeFns 'verbs', verbs
 
 # these apply only to entire commands:
 aliases =
@@ -1231,7 +1231,7 @@ class Game
       origDir = dirDest[what] or null
 
       if thing = things[what]
-        what = thing.name
+        what = thing.nayme
       else
         if rot = rotDest[what]
           what = rot[@dir]
@@ -1239,7 +1239,7 @@ class Game
         if dir = dirDest[what]
           there = locs[@loc][dir]
           there or= locs[locs[@loc][@dir]?.to]?[dir] # e.g. FUTON
-          what = there?.name or there?.to
+          what = there?.nayme or there?.to
           assert what, "loc=#{@loc} dir=#{@dir} phrase=#{phrase}"
 
       if what of things
@@ -1263,12 +1263,12 @@ class Game
     assert what, '!what'
     {msg} = @parseNoun [what]
     return msg if msg
-    name = @getAhead().name
+    nayme = @getAhead().nayme
     where = things[what]?.where
-    return if name is what or name and name is where or @loc is where
+    return if nayme is what or nayme and nayme is where or @loc is where
     if what is 'LASER'
       return if @laser
-      return if name is 'WORKBENCH'
+      return if nayme is 'WORKBENCH'
     if what is 'BUGS'
       assert @bugs, 'bugs'
     return "Your #{link 'SWEETIE'} is still at work!" if what is 'SWEETIE'
@@ -1355,7 +1355,7 @@ class Game
   attrBase: (what) ->
     if thing = things[what]
       return thing.attrBase if thing.attrBase
-      what = thing.name if thing.name
+      what = thing.nayme if thing.nayme
     what.replace /\s/g, '_'
   openAttr: (what) ->
     assert @canOpen(what), "!canOpen #{what}"
@@ -1457,16 +1457,16 @@ class Game
   getAhead: -> @getHere()[@dir] or error "locs.#{@loc}.#{@dir}"
   getFacing: ->
     ahead = @getAhead()
-    ahead.to or ahead.name or error "locs.#{@loc}.#{@dir}.to|name"
+    ahead.to or ahead.nayme or error "locs.#{@loc}.#{@dir}.to|nayme"
   getFarAhead: ->
     ahead = @getAhead()
     while ahead.to
       ahead = locs[ahead.to]
       return ahead if not a = ahead[@dir]
       ahead = a
-    return ahead.open if ahead.open?.name and @isOpen ahead.name
+    return ahead.open if ahead.open?.nayme and @isOpen ahead.nayme
     return ahead
-  getFarFacing: -> @getFarAhead().name
+  getFarFacing: -> @getFarAhead().nayme
 
   moveTo: (words, opts = {}) ->
     wasFacing = @getFacing()
@@ -1507,7 +1507,7 @@ class Game
     if not actions.length
       ahead = locs[loc][dir]
       assert ahead, "!locs.#{loc}.#{dir}"
-      facing = ahead.name or ahead.to
+      facing = ahead.nayme or ahead.to
       if opts.rotOnly or (not origDir and what is facing)
         return "You are already facing the #{link what}!"
       else
@@ -1537,8 +1537,8 @@ class Game
     return '' if not l or not r
     ' ' + """
     From here you could
-    {ROTATE LEFT} to face the #{link l.name or l.to} or
-    {ROTATE RIGHT} to face the #{link r.name or r.to}.
+    {ROTATE LEFT} to face the #{link l.nayme or l.to} or
+    {ROTATE RIGHT} to face the #{link r.nayme or r.to}.
     """ + ' '
 
   postMove: (msg) ->
